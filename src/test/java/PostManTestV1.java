@@ -15,7 +15,7 @@ public class PostManTestV1 {
         given()
                 .baseUri("https://postman-echo.com")
                 .contentType("text/plain; charset = UTF-8")
-                .body("TakeMeПривет")
+                .body("TakeMeПривет1")
 
 
                 .when()
@@ -24,7 +24,7 @@ public class PostManTestV1 {
                 .then()
 
                 .statusCode(200)
-                .assertThat().body("data", equalTo("TakeMeПривет"))
+                .assertThat().body("data", equalTo("TakeMeПривет1"))
 
         ;
     }
